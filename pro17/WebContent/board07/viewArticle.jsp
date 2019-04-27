@@ -32,7 +32,6 @@
      }
  
      function fn_modify(){
-    	 alert("aaa");
     	 document.getElementById("div_view_article").style.display='none';
 		 document.getElementById("div_modify_form").style.display='block';
     	 
