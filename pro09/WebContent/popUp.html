@@ -2,7 +2,17 @@
   <head>
   <meta charset="UTF-8">
   <script type="text/javascript">
-   function setPopUpStart(obj){
+  function setPopUpStart(obj) {
+	  if(obj.checked==true) {
+	   var expireDate = new Date();
+	   expireDate.setMonth(expireDate.getMonth() + 1);
+	   document.cookie = "notShowPop="+"true"+";path=/; expires="+expireDate.toGMTString();
+	   
+	   window.close(); 
+	  }
+ }
+  
+/*    function setPopUpStart(obj){
       if(obj.checked==true){
         var expireDate = new Date();
 	 	expireDate.setMonth(expireDate.getMonth() + 1);
@@ -10,8 +20,8 @@
                                                expireDate.toGMTString();
          window.close();
       }
-  }
-  </script>
+   }
+ */  </script>
   </head>
   <body>
     알림 팝업창입니다.

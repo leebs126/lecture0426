@@ -13,8 +13,8 @@
 </head>
 <body>
  
-<fmt:setLocale value="en_US" />
-<%-- <fmt:setLocale value="ko_KR" /> --%>
+<%-- <fmt:setLocale value="en_US" /> --%>
+<fmt:setLocale value="ko_KR" />
 <h1>
  회원정보<br><br>
  <fmt:bundle basename="resource.member" >  
