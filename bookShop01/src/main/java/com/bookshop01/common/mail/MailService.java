@@ -34,10 +34,10 @@ public class MailService {
 	public void sendMail(Map receiverMap, List<OrderVO> myOrderList, MemberVO orderer) {
 	//public  void sendMail() {
 		String to,  subject, body = "";
-		String mail_template;
+		String mail_template = "";
 		OrderVO orderVO  = (OrderVO) myOrderList.get(0)
 				;
-//		to = "x9103293@naver.com";
+//		to = "xxxxx@naver.com";
 //		subject = "테스트메일";
 //		body = "테스트 메일입니다.";
 		
@@ -65,7 +65,7 @@ public class MailService {
 	}
 	
 	private String  readHtmlFile() {
-		String mail_template = null;
+		String mail_template = "";
 		 // 버퍼 생성
         BufferedReader br = null;       
          
